@@ -1,0 +1,298 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Verdana,Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+.header {
+	/*background-color: #F1F1F1;*/
+}
+
+.header.icon{
+	float: left;
+	width: 150px;
+	height: auto;
+}
+
+.header.textcenter {
+	text-align: center;
+}
+
+/* Container for flexboxes */
+.row {
+	display: -webkit-flex;
+	display: flex;
+}
+
+.row.color{
+	/*purple*/
+	/*background-color: #37003C; */
+	/*light blue*/
+	background-color: #14DDFF; 
+}
+.navrow {
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	padding: 5px;
+}
+
+.navrow.row{
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	margin-bottom: 5px;
+}
+
+/* First Navigation Bar */
+
+.navrow.row.first{	
+	font-family: Verdana;
+	font-weight: bold;
+}
+
+.navrow.row.first img{	
+	position: relative;
+	width:  35px;
+	height: 35px;
+	background-position: 50% 50%;
+	background-repeat:   no-repeat;
+	background-size:     cover;	
+}
+
+.navrow.row.first div{
+	padding-right: 10px;
+	padding-left: 8px;
+}
+
+/* Second Navigation Bar */
+
+.navrow.row.second {
+	border-radius: 5px;
+	padding: 20px;
+	background-color: #37003C;
+	font-weight: bold;
+	font-family: Verdana;
+	font-size: 15px;
+	text-align: center;
+	color: white;
+}
+
+.navrow.row.second ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.navrow.row.second li {
+	float: left;
+}
+
+.navrow.row.second li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 4px 20px;
+	text-decoration: none;
+}
+
+.navrow.row.second li a:hover:not(.active) {
+	background-color: #111;
+}
+
+.active {
+	background-color: #111;
+}
+
+.dropbtn {
+	font-family: Verdana;
+  background-color: #37003C;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+	font-family: Verdana;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #14DDFF;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+/* Create three unequal columns that sits next to each other */
+.column {
+	padding: 10px;
+	/*padding-bottom: 300px;*/
+}
+
+/* Left and right column */
+.column.leftside {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+.column.leftside.box{
+	border-radius: 5px;	
+	background-color: #FFFFFF;
+}
+
+.column.leftside.box.head{
+	font-weight: bold;
+	font-family: Verdana;
+	font-size: 13px;
+	text-align: center;
+	color: #ff0066;
+}
+
+.column.leftside.box table {
+	border-collapse: collapse;
+	width: 100%;
+	font-weight: bold;
+	font-family: Verdana;
+	font-size: 11px;
+}
+
+.column.leftside.box th, td {
+	padding: 6px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+.column.leftside.box tr:hover { 
+	background: #ffccf2; 
+}
+.column.leftside.box td a { 
+	display: block; 
+	text-decoration: none;
+}
+.column.leftside.box.img1{
+	height: auto;
+	width: 120px;
+	float: center;
+}
+.column.leftside.box img{
+	position: relative;
+	width:  35px;
+	height: 35px;
+	background-position: 50% 50%;
+	background-repeat:   no-repeat;
+	background-size:     cover;	
+}
+
+/* Middle column */
+.column.middle {
+	-webkit-flex: 4;
+	-ms-flex: 4;
+	flex: 4;
+}
+
+/*.column.middle.box{
+	border-radius: 5px;	
+	background-color: #FFFFFF;
+}*/
+.column.middle.box.card1{
+	width: 100%;
+	height: auto;
+}
+.column.middle.box.card1 img{
+	width: 100%;
+	height: auto;
+	-webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+.column.middle.box.card1:hover img{
+	-webkit-transform:scale(1.1); /* Safari and Chrome */
+    -moz-transform:scale(1.1); /* Firefox */
+    -ms-transform:scale(1.1); /* IE 9 */
+    -o-transform:scale(1.1); /* Opera */
+     transform:scale(1.1);
+}
+
+.column.middle.box.card2{
+	width: 90%;
+	height: auto;
+	background-color: #37003C;
+}
+
+.column.middle.box.card2 p{
+	color: #14DDFF;
+	font-weight: bold;	
+	font-style: oblique;
+	font-family: Verdana;
+	font-size: 13px;
+}
+.column.middle.box.card2 h1{
+	color: #FFFFFF;	
+	font-family: Verdana;
+	font-size: 38px;
+}
+
+.column.middle.box.card2 h4{
+	color: #FFFFFF;	
+	font-family: Verdana;
+	font-size: 17px;
+}
+
+.column.middle.box.card2 a{
+	color: #FFFFFF;	
+	font-family: Verdana;
+	font-size: 17px;
+	text-decoration: none;
+}
+
+.column.middle.box.card2 img{
+	position: relative;
+	width:  35px;
+	height: 35px;
+	background-position: 50% 50%;
+	background-repeat:   no-repeat;
+	background-size:     cover;	
+}
+/* Style the footer */
+.footer {
+	background-color: #f1f1f1;
+	padding: 10px;
+	text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+	.row {
+		-webkit-flex-direction: column;
+		flex-direction: column;
+	}
+}
