@@ -9,6 +9,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Premeier League Football</title>
+	<link rel="shortcut icon" href="with css/images/logos/premier-league.png" />
   <style>
   ul
   {
