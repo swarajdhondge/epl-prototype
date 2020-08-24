@@ -1,4 +1,4 @@
-# English Premier Leabuge(epl)-prototype
+# English Premier League(epl)-prototype
 A simple only HTML and with CSS and without CSS model of the English Premier Leageue(epl) football webiste.
  
 Need to add your own src link video in the video tag of the html page for both CSS and witout CSS.
