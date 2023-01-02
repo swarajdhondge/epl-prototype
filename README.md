@@ -9,9 +9,6 @@ Steps :-
  2. Edit <video> tag by changing the 
     <source src="YOUR LOCAL FILE PATH" type="video/mp4" />
  3. Deploy 
- 
- Site for preview with CSS  and without CSS is deployed on
-  https://epl-website.herokuapp.com/
- 
+  
 
  Need to only use the with CSS and withour CSS folders. Other root folder contents are for heroku. Ignore these files.
